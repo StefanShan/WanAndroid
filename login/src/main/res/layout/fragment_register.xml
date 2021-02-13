@@ -31,7 +31,7 @@
         android:id="@+id/edt_register_username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="250dp"
+        android:layout_marginTop="230dp"
         android:hint="@string/login_edt_email"
         android:importantForAutofill="no"
         android:inputType="text"
@@ -54,6 +54,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/edt_register_username" />
 
+    <EditText
+        android:id="@+id/edit_register_repassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="@string/login_edit_repassword"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_register_password" />
+
     <Button
         android:id="@+id/btn_register"
         android:layout_width="match_parent"
@@ -66,6 +79,6 @@
         app:backgroundTint="@color/teal_700"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_register_password" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_register_repassword" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
